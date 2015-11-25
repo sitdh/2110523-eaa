@@ -1,2 +1,2 @@
-# 2110523-eaa
-Enterprise Application Architecture
+# 2110523: สถาปัตยกรรมโปรแกรมประยุกต์วิสาหกิจ (Enterprise Application Architecture)
+Code repository
