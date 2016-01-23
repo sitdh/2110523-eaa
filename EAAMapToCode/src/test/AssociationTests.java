@@ -15,7 +15,7 @@ public class AssociationTests {
 		A2 a2 = new A2();
 		a2.linkB2 = new B2Mock();
 		
-		assertEquals(20, a2.getSummationOfVar1andVar2());
+		assertEquals(20, a2.getSumationOfB2());
 	}
 	
 	public class B2Mock extends B2 {
