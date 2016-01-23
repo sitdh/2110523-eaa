@@ -1,5 +1,5 @@
 package P;
 
-public class B2 extends BMasterClass {
+public class B2 extends BMaster {
 
 }

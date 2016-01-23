@@ -1,6 +1,6 @@
 package P;
 
-public class A2 extends AMasterClass {
+public class A2 extends AMaster {
 	
 	public B2 linkB2;
 	
