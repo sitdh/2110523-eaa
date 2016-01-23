@@ -10,7 +10,7 @@ import P.B2;
 public class AssociationTests {
 
 	@Test
-	public void test() {
+	public void testAssociationWithOneToOneRelationship() {
 		
 		A2 a2 = new A2();
 		a2.linkB2 = new B2Mock();
