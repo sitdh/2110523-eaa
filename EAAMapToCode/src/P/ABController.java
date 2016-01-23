@@ -22,7 +22,6 @@ public class ABController {
 	
 	public void testA3B3Association1toMany() {
 		
-		
 		A3 a3 = new A3();
 		
 		for(int i = 0; i < 2; i++) {

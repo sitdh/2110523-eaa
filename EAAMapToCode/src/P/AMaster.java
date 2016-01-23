@@ -36,6 +36,6 @@ public class AMaster {
 	}
 
 	public int getSummationOfVar1andVar2() {
-		return this.aVar1 + this.aVar2;
+		return getaVar1() + getaVar2();
 	}
 }

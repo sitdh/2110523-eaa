@@ -36,7 +36,7 @@ public class BMaster {
 	}
 	
 	public int getSummationOfVar1andVar2() {
-		return this.bVar1 + this.bVar2;
+		return getbVar1() + getbVar2();
 	}
 
 }
