@@ -1,10 +1,10 @@
 package P;
 
-public class A2 extends AMaster {
+public class A2AssociationOneToOne extends AMaster {
 	
 	public B2 linkB2;
 	
-	public A2() {
+	public A2AssociationOneToOne() {
 		
 	}
 	

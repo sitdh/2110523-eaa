@@ -12,7 +12,7 @@ public class ABController {
 		bb.setbVar1(20);
 		bb.setbVar2(10);
 		
-		A2 aa = new A2();
+		A2AssociationOneToOne aa = new A2AssociationOneToOne();
 		aa.linkB2 = bb;
 		
 		assert bb.getSummationOfVar1andVar2() == aa.getSumationOfB2();
@@ -22,7 +22,7 @@ public class ABController {
 	
 	public void testA3B3Association1toMany() {
 		
-		A3 a3 = new A3();
+		A2AssociationOneToMany a3 = new A2AssociationOneToMany();
 		
 		for(int i = 0; i < 2; i++) {
 			B3 bb1 = new B3();
