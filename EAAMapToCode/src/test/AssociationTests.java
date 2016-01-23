@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import P.A2;
+import P.A2AssociationOneToOne;
 import P.B2;
 
 public class AssociationTests {
@@ -12,7 +12,7 @@ public class AssociationTests {
 	@Test
 	public void testAssociationWithOneToOneRelationship() {
 		
-		A2 a2 = new A2();
+		A2AssociationOneToOne a2 = new A2AssociationOneToOne();
 		a2.linkB2 = new B2Mock();
 		
 		assertEquals(20, a2.getSumationOfB2());

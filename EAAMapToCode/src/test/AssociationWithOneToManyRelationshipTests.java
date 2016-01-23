@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import P.A3;
+import P.A2AssociationOneToMany;
 import P.B3;
 
 public class AssociationWithOneToManyRelationshipTests {
@@ -20,7 +20,7 @@ public class AssociationWithOneToManyRelationshipTests {
 	}
 	
 	public void testAShouldGetSumOfMultipleInstanceOfB() {
-		A3 a3 = new A3();
+		A2AssociationOneToMany a3 = new A2AssociationOneToMany();
 		
 		for(int i = 0; i < 3; i++) {
 			B3 b3 = new B3Mock();
