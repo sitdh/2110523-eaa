@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import P.A2AssociationOneToOne;
-import P.B2;
+import P.B2AssociationOneToOneInput;
 
 public class AssociationTests {
 
@@ -18,7 +18,7 @@ public class AssociationTests {
 		assertEquals(20, a2.getSumationOfB2());
 	}
 	
-	public class B2Mock extends B2 {
+	public class B2Mock extends B2AssociationOneToOneInput {
 		public int getbVar1() {
 			return 10;
 		}

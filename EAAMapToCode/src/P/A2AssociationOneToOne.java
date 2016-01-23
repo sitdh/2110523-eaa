@@ -2,7 +2,7 @@ package P;
 
 public class A2AssociationOneToOne extends AMaster {
 	
-	public B2 linkB2;
+	public B2AssociationOneToOneInput linkB2;
 	
 	public A2AssociationOneToOne() {
 		
