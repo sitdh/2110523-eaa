@@ -3,7 +3,7 @@ package P;
 import java.util.ArrayList;
 import java.util.List;
 
-public class A3 extends A1 {
+public class A3 extends AMasterClass {
 	
 	public List<B3> listOfB3;
 	

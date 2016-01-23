@@ -1,12 +1,12 @@
 package P;
 
-public class B1 {
+public class BMasterClass {
 	
 	public int bVar1;
 	private int bVar2;
 	protected String bVar3;
 	
-	public B1() {
+	public BMasterClass() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
