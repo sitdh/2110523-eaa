@@ -25,7 +25,7 @@ public class ABController {
 		A2AssociationOneToMany a3 = new A2AssociationOneToMany();
 		
 		for(int i = 0; i < 2; i++) {
-			B3AssociationOneToManyInput bb1 = new B3AssociationOneToManyInput();
+			B2AssociationOneToManyInput bb1 = new B2AssociationOneToManyInput();
 			bb1.setbVar1(10 * (i + 1));
 			bb1.setbVar2(20);
 			a3.listOfB3.add(bb1);
@@ -33,7 +33,7 @@ public class ABController {
 		
 		int summationOfVar1 = 0;
 		
-		for(B3AssociationOneToManyInput b : a3.listOfB3) {
+		for(B2AssociationOneToManyInput b : a3.listOfB3) {
 			System.out.println(String.format("Variable 1 has number %d", b.getbVar1()));
 			summationOfVar1 += b.getbVar1();
 		}
