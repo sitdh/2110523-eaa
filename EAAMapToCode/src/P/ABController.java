@@ -1,12 +1,14 @@
 package P;
 
+import java.util.List;
+
 public class ABController {
 	
 	public ABController() {
 	
 	}
 	
-	public void testA2B2Association() {
+	public void testFirstCase() {
 		
 		B2AssociationOneToOneInput bb = new B2AssociationOneToOneInput();
 		bb.setbVar1(20);
@@ -20,7 +22,7 @@ public class ABController {
 		
 	}
 	
-	public void testA3B3Association1toMany() {
+	public void testSecondCase() {
 		
 		A2AssociationOneToMany a3 = new A2AssociationOneToMany();
 		
@@ -41,13 +43,46 @@ public class ABController {
 		System.out.println(String.format("Total of summation: %d", summationOfVar1));
 		
 	}
+	
+	public void testThirdCase() {
+		
+		A3AggregationCoffeeMenu coffeeMenu = new A3AggregationCoffeeMenu();
+		
+		B3AggregationCoffee espresso = new B3AggregationCoffee();
+		espresso.setCoffeeLabel("Espresso");
+		espresso.setPrice(50);
+		
+		
+		B3AggregationCoffee latte = new B3AggregationCoffee();
+		latte.setCoffeeLabel("Latte");
+		latte.setPrice(80);
+		
+		coffeeMenu.addCoffee(espresso);
+		coffeeMenu.addCoffee(latte);
+		
+		assert(2 == coffeeMenu.getNumberOfCofeeInMenu());
+		List<B3AggregationCoffee> coffees = coffeeMenu.getCoffee();
+		for(B3AggregationCoffee coffee : coffees) {
+			System.out.println(
+					String.format(
+							"Menu: %s $%d", 
+							coffee.getCoffeeLable(), 
+							coffee.getPrice()
+							)
+					);
+		}
+		
+	}
 
 	public static void main(String[] args) {
 		
 		ABController abController = new ABController();
 		
-		abController.testA2B2Association();
-		abController.testA3B3Association1toMany();
+		abController.testFirstCase();
+		System.out.println("=================");
+		abController.testSecondCase();
+		System.out.println("=================");
+		abController.testThirdCase();
 
 	}
 
