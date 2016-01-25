@@ -1,6 +1,6 @@
 package P;
 
-public class B3AggregationCoffeeIngredion {
+public class B3AggregationCoffeeIngredient {
 	
 	private String name;
 	private int volume;

@@ -1,5 +1,6 @@
 package P;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ABController {
@@ -77,17 +78,41 @@ public class ABController {
 		System.out.println("-----------------");
 		
 		// Second case: Composition
+		// Coffee should include with ingredients
 		
+		final float HOT_ESPRESSO_PRICE_FACTOR = 0.2f;
 		
+		B3AggregationCoffeeIngredient espressoShot = new B3AggregationCoffeeIngredient();
+		espressoShot.setName("Espresso");
+		espressoShot.setVolume(1);
+		espressoShot.setPrice(40);
 		
+		B3AggregationCoffeeIngredient milk = new B3AggregationCoffeeIngredient();
+		milk.setName("Milk");
+		milk.setVolume(3);
+		milk.setPrice(15);
 		
+		List<B3AggregationCoffeeIngredient> hotLatteIngredients = new ArrayList<B3AggregationCoffeeIngredient>();
+		hotLatteIngredients.add(espressoShot);
+		hotLatteIngredients.add(milk);
 		
+		A3AggregationCoffee hotLatte = new A3AggregationCoffee(hotLatteIngredients, HOT_ESPRESSO_PRICE_FACTOR);
+		hotLatte.setCoffeeLabel("Hot Latte");
 		
+		float costSum = espressoShot.getPrice() + milk.getPrice();
+		assert((int)(costSum * HOT_ESPRESSO_PRICE_FACTOR) == hotLatte.getPrice());
+		
+		System.out.println(
+				String.format(
+							"Coffee: %s - $%d with ingredient(s) %s",
+							hotLatte.getCoffeeLable(),
+							hotLatte.getPrice(),
+							hotLatte.getIngreedions()
+						)
+				);
 	}
 	
 	public void testThirdCase() {
-		
-		
 		
 		
 		
