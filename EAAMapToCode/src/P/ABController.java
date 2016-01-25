@@ -52,7 +52,6 @@ public class ABController {
 		espresso.setCoffeeLabel("Espresso");
 		espresso.setPrice(50);
 		
-		
 		B3AggregationCoffee latte = new B3AggregationCoffee();
 		latte.setCoffeeLabel("Latte");
 		latte.setPrice(80);
