@@ -2,13 +2,13 @@ package P;
 
 import java.util.List;
 
-public class A3AgregationCoffee extends B3AggregationCoffee {
+public class A3AggregationCoffee extends B3AggregationCoffee {
 	
 	protected List<B3AggregationCoffeeIngredion> ingredions;
 	
 	protected float coffeePriceFactor = 0f;
 	
-	public A3AgregationCoffee(List<B3AggregationCoffeeIngredion> ingredions, float coffeePriceFactor) {
+	public A3AggregationCoffee(List<B3AggregationCoffeeIngredion> ingredions, float coffeePriceFactor) {
 		this.ingredions = ingredions;
 		this.coffeePriceFactor = coffeePriceFactor;
 	}
