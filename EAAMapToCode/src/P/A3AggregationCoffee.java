@@ -13,14 +13,24 @@ public class A3AggregationCoffee extends B3AggregationCoffee {
 		this.coffeePriceFactor = coffeePriceFactor;
 	}
 	
-	public float coffeePrice() {
+	public int getPrice() {
 		float cost = 0f;
 		
 		for(B3AggregationCoffeeIngredion ingredion : ingredions) {
 			cost += ingredion.getPrice();
 		}
 		
-		return cost * coffeePriceFactor;
+		return (int)(cost * (1f + coffeePriceFactor));
+	}
+	
+	public String getIngreedions() {
+		String ingredionList = "";
+		
+		for(B3AggregationCoffeeIngredion ingredion : ingredions) {
+			ingredionList += String.format("%s ", ingredion.getName());
+		}
+		
+		return ingredionList;
 	}
 
 }
