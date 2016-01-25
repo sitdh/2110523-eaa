@@ -10,41 +10,44 @@ public class ABController {
 	
 	public void testFirstCase() {
 		
+		// First case for One-to-One
+		
 		B2AssociationOneToOneInput bb = new B2AssociationOneToOneInput();
 		bb.setbVar1(20);
 		bb.setbVar2(10);
 		
-		A2AssociationOneToOne aa = new A2AssociationOneToOne();
-		aa.linkB2 = bb;
+		A2AssociationOneToOne a2AssociationOneToOne = new A2AssociationOneToOne();
+		a2AssociationOneToOne.linkB2 = bb;
 		
-		assert bb.getSummationOfVar1andVar2() == aa.getSumationOfB2();
-		System.out.println(String.format("Total of value: %d", aa.getSumationOfB2()));
+		assert bb.getSummationOfVar1andVar2() == a2AssociationOneToOne.getSumationOfB2();
+		System.out.println(String.format("Total of value: %d", a2AssociationOneToOne.getSumationOfB2()));
+
+		System.out.println("-----------------");
 		
-	}
-	
-	public void testSecondCase() {
-		
-		A2AssociationOneToMany a3 = new A2AssociationOneToMany();
+		// First case for One-to-Many
+		A2AssociationOneToMany a2AssociationOneToMany = new A2AssociationOneToMany();
 		
 		for(int i = 0; i < 2; i++) {
 			B2AssociationOneToManyInput bb1 = new B2AssociationOneToManyInput();
 			bb1.setbVar1(10 * (i + 1));
 			bb1.setbVar2(20);
-			a3.listOfB3.add(bb1);
+			a2AssociationOneToMany.listOfB3.add(bb1);
 		}
 		
 		int summationOfVar1 = 0;
 		
-		for(B2AssociationOneToManyInput b : a3.listOfB3) {
+		for(B2AssociationOneToManyInput b : a2AssociationOneToMany.listOfB3) {
 			System.out.println(String.format("Variable 1 has number %d", b.getbVar1()));
 			summationOfVar1 += b.getbVar1();
 		}
 		
 		System.out.println(String.format("Total of summation: %d", summationOfVar1));
-		
 	}
 	
-	public void testThirdCase() {
+	public void testSecondCase() {
+		
+		// Second case: Aggregation
+		// Coffee menu should have coffee
 		
 		A3AggregationCoffeeMenu coffeeMenu = new A3AggregationCoffeeMenu();
 		
@@ -70,6 +73,23 @@ public class ABController {
 							)
 					);
 		}
+		
+		System.out.println("-----------------");
+		
+		// Second case: Composition
+		
+		
+		
+		
+		
+		
+	}
+	
+	public void testThirdCase() {
+		
+		
+		
+		
 		
 	}
 
