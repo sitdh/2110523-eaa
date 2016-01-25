@@ -96,7 +96,9 @@ public class ABController {
 		hotLatteIngredients.add(espressoShot);
 		hotLatteIngredients.add(milk);
 		
-		A3AggregationCoffee hotLatte = new A3AggregationCoffee(hotLatteIngredients, HOT_ESPRESSO_PRICE_FACTOR);
+		A3AggregationCoffee hotLatte = new A3AggregationCoffee();
+		hotLatte.addCoffeeIngredion(hotLatteIngredients);
+		hotLatte.addCoffeePricesFactor(0.2f);
 		hotLatte.setCoffeeLabel("Hot Latte");
 		
 		float costSum = espressoShot.getPrice() + milk.getPrice();
