@@ -8,9 +8,12 @@ public class A3AggregationCoffee extends B3AggregationCoffee {
 	
 	protected float coffeePriceFactor = 0f;
 	
-	public A3AggregationCoffee(List<B3AggregationCoffeeIngredient> ingredions, float coffeePriceFactor) {
+	public void addCoffeeIngredion(List<B3AggregationCoffeeIngredient> ingredions) {
 		this.ingredions = ingredions;
-		this.coffeePriceFactor = coffeePriceFactor;
+	}
+	
+	public void addCoffeePricesFactor(float coffeePriceFactor) {
+		this.coffeePriceFactor = 1f + coffeePriceFactor;
 	}
 	
 	public int getPrice() {
@@ -20,7 +23,7 @@ public class A3AggregationCoffee extends B3AggregationCoffee {
 			cost += ingredient.getPrice();
 		}
 		
-		return (int)(cost * (1f + coffeePriceFactor));
+		return (int)(cost * coffeePriceFactor);
 	}
 	
 	public String getIngreedions() {
