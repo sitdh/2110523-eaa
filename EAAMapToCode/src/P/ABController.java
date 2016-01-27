@@ -116,8 +116,17 @@ public class ABController {
 	
 	public void testFourthCase() {
 		
-		A4DependencyCarRentalService rentalService = new A4DependencyCarRentalService(); 
-		rentalService.setRentCar(new B4DependencyCityCar());
+		A4Bozo bozo = new A4Bozo();
+		bozo.setBozoClothes(new B4BozoZooClothes());
+		
+		assert("APQ-5743" == bozo.getBozoClothBrand());
+		assert("Big hat, Red shirt, Green trousers and Big red shoe" == bozo.getBozoClothDetails());
+		System.out.println(
+					String.format(
+							"Brand: %s\nDetail: %s", 
+							bozo.getBozoClothBrand(), bozo.getBozoClothDetails()
+						)
+				);
 		
 	}
 
