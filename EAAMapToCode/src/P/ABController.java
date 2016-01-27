@@ -9,7 +9,7 @@ public class ABController {
 	
 	}
 	
-	public void testFirstCase() {
+	public void testSecondCase() {
 		
 		// First case for One-to-One
 		
@@ -45,7 +45,7 @@ public class ABController {
 		System.out.println(String.format("Total of summation: %d", summationOfVar1));
 	}
 	
-	public void testSecondCase() {
+	public void testThirdCase() {
 		
 		// Second case: Aggregation
 		// Coffee menu should have coffee
@@ -114,9 +114,10 @@ public class ABController {
 				);
 	}
 	
-	public void testThirdCase() {
+	public void testFourthCase() {
 		
-		
+		A4DependencyCarRentalService rentalService = new A4DependencyCarRentalService(); 
+		rentalService.setRentCar(new B4DependencyCityCar());
 		
 	}
 
@@ -124,11 +125,11 @@ public class ABController {
 		
 		ABController abController = new ABController();
 		
-		abController.testFirstCase();
-		System.out.println("=================");
 		abController.testSecondCase();
 		System.out.println("=================");
 		abController.testThirdCase();
+		System.out.println("=================");
+		abController.testFourthCase();
 
 	}
 
