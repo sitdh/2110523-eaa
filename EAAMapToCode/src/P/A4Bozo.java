@@ -16,11 +16,11 @@ public class A4Bozo {
 		return cloth.getClothesInformation();
 	}
 
-	public B4BozoClothes getRentCar() {
+	public B4BozoClothes getBozoClothes() {
 		return cloth;
 	}
 
-	public void setRentCar(B4BozoClothes cloth) {
+	public void setBozoClothes(B4BozoClothes cloth) {
 		this.cloth = cloth;
 	}
 
