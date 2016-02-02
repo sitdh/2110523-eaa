@@ -12,7 +12,7 @@ public class ABController {
 	public void testSecondCase() {
 		
 		// First case for One-to-One
-		
+		// 2
 		B2AssociationOneToOneInput bb = new B2AssociationOneToOneInput();
 		bb.setbVar1(20);
 		bb.setbVar2(10);
@@ -26,6 +26,7 @@ public class ABController {
 		System.out.println("-----------------");
 		
 		// First case for One-to-Many
+		// 3
 		A2AssociationOneToMany a2AssociationOneToMany = new A2AssociationOneToMany();
 		
 		for(int i = 0; i < 2; i++) {
@@ -49,7 +50,7 @@ public class ABController {
 		
 		// Second case: Aggregation
 		// Coffee menu should have coffee
-		
+		// 4
 		A3AggregationCoffeeMenu coffeeMenu = new A3AggregationCoffeeMenu();
 		
 		B3AggregationCoffee espresso = new B3AggregationCoffee();
@@ -79,7 +80,6 @@ public class ABController {
 		
 		// Second case: Composition
 		// Coffee should include with ingredients
-		
 		final float HOT_ESPRESSO_PRICE_FACTOR = 0.2f;
 		
 		B3AggregationCoffeeIngredient espressoShot = new B3AggregationCoffeeIngredient();
