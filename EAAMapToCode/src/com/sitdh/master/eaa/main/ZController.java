@@ -1,5 +1,7 @@
 package com.sitdh.master.eaa.main;
 
+import com.sitdh.master.eaa.subsystem.Y9NewYorkRadioStation;
+
 public class ZController {
 	
 	public static void testCase1() {
@@ -160,7 +162,19 @@ public class ZController {
 	}
 	
 	public static void testCase9() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		System.out.println("~~~~~~~~~~~~~~~~ Case 9 ~~~~~~~~~~~~~~~~");
+		
+		X9BangkokRadioStation bkkRadioStation = new X9BangkokRadioStation();
+		Y9NewYorkRadioStation nyRadioStation = new Y9NewYorkRadioStation();
+		
+		nyRadioStation.startLiveStreamingFromAnoterStation(bkkRadioStation);
+		
+		for(String song : nyRadioStation.getStreaming()) {
+			System.out.println("ny> Streamed " + song);
+		}
+		
+		System.out.println(String.format("ny> Stream location %s", nyRadioStation.getCurrentStreamingLocation()));
+		nyRadioStation.rerouteStreamingServer();
 	}
 
 	public static void main(String[] args) {
