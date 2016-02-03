@@ -3,6 +3,8 @@ package com.sitdh.master.eaa.main;
 public class ZController {
 	
 	public static void testCase1() {
+		System.out.println("~~~~~~~~~~~~~~~~ Case 1 ~~~~~~~~~~~~~~~~");
+		
 		A1Motorbike a1 = new A1Motorbike();
 		B1Helicopter b1 = new B1Helicopter();
 		
@@ -19,6 +21,7 @@ public class ZController {
 	}
 	
 	public static void testCase2() {
+		System.out.println("~~~~~~~~~~~~~~~~ Case 2 ~~~~~~~~~~~~~~~~");
 		
 		A2PointOfSell pos = new A2PointOfSell();
 		
@@ -33,6 +36,7 @@ public class ZController {
 	}
 	
 	public static void testCase3() {
+		System.out.println("~~~~~~~~~~~~~~~~ Case 3 ~~~~~~~~~~~~~~~~");
 		
 		B3Coffee espresso = new B3Coffee();
 		espresso.setName("Espresso");
@@ -64,6 +68,8 @@ public class ZController {
 	}
 	
 	public static void testCase4() {
+		System.out.println("~~~~~~~~~~~~~~~~ Case 4 ~~~~~~~~~~~~~~~~");
+		
 		A4Dish largeDish = new A4Dish();
 		B4Food salad = new B4Food();
 		
@@ -83,6 +89,8 @@ public class ZController {
 	}
 	
 	public static void testCase5() {
+		System.out.println("~~~~~~~~~~~~~~~~ Case 5 ~~~~~~~~~~~~~~~~");
+		
 		A5Department department = new A5Department();
 		department.setName("Computer Engineering");
 		department.setDepartmentDescription("The computer engineering faculty members enjoy a close relationship with the applied mathematics and statistics, computer science, electrical engineering, and computational biology faculty members. Faculty members carry out joint research projects, supervise students, and teach courses outside their own departments. ");
@@ -141,7 +149,7 @@ public class ZController {
 		 */
 		ZController.testCase1();
 		
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #2
@@ -152,7 +160,7 @@ public class ZController {
 		 */
 		ZController.testCase2();
 
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #3
@@ -163,7 +171,7 @@ public class ZController {
 		 */
 		ZController.testCase3();
 		
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #4
@@ -174,7 +182,7 @@ public class ZController {
 		 */
 		ZController.testCase4();
 
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #5
@@ -185,7 +193,7 @@ public class ZController {
 		 */
 		ZController.testCase5();
 
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #6
@@ -196,7 +204,7 @@ public class ZController {
 		 */
 		ZController.testCase6();
 
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #7
@@ -207,7 +215,7 @@ public class ZController {
 		 */
 		ZController.testCase7();
 
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #8
@@ -218,7 +226,7 @@ public class ZController {
 		 */
 		ZController.testCase8();
 
-		System.out.println("=============================");
+		System.out.println();
 		
 		/**
 		 * #9
