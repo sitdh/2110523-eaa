@@ -140,7 +140,13 @@ public class ZController {
 	}
 	
 	public static void testCase7() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		System.out.println("~~~~~~~~~~~~~~~~ Case 7 ~~~~~~~~~~~~~~~~");
+		
+		A7Customer customer = new A7Customer();
+		B7Waiter waiter = new B7Waiter();
+		
+		customer.callForWaiter(waiter);
+		customer.makeAnOrder("Coconut Milk Soup with Chicken");
 	}
 	
 	public static void testCase8() {
