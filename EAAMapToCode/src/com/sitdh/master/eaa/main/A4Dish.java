@@ -6,7 +6,7 @@ public class A4Dish {
 	
 	public String color;
 	
-	private B4Food food;
+	public B4Food food;
 	
 	public A4Dish() {
 		dishSize = "Large";
