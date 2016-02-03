@@ -48,10 +48,15 @@ public class ZController {
 		coffeeMenu.addCoffee(espresso);
 		coffeeMenu.addCoffee(latte);
 		
-		for(B3Coffee coffee : coffeeMenu.getCoffeeList()) {
+		B3Coffee coffee = null;
+		while(!coffeeMenu.getCoffeeList().isEmpty()) {
+			coffee = coffeeMenu.getCoffeeList().firstElement();
+			
 			System.out.println(String.format("Name: %s", coffee.getName()));
 			System.out.println(String.format("Size: %s", coffee.getSize()));
 			System.out.println(String.format("Price: $%,.2f", coffee.getPrice()));
+			
+			coffeeMenu.getCoffeeList().remove(coffee);
 			
 			System.out.println("------------------------");
 		}
@@ -67,18 +72,47 @@ public class ZController {
 		
 		System.out.println(String.format("Dish size:\t%s", largeDish.getDishSize()));
 		System.out.println(String.format("Color:\t\t%s", largeDish.getColor()));
-		System.out.println(String.format("Food in dish:\t%s", largeDish.getFood().getName()));
+		System.out.println(String.format("Food in dish:\t%s", largeDish.food.getName()));
 		
 		System.out.println("------------------------");
 		
 		System.out.println(String.format("Food name:\t%s", salad.getName()));
 		System.out.println(String.format("Food price:\t$%,.2f", salad.getPrice()));
 		System.out.println(String.format("Food description:%s", salad.getDescription()));
-		System.out.println(String.format("Place in dish:\t%s", salad.getPlaceInDish().getDishSize()));
+		System.out.println(String.format("Place in dish:\t%s", salad.placeInDish.getDishSize()));
 	}
 	
 	public static void testCase5() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		A5Department department = new A5Department();
+		department.setName("Computer Engineering");
+		department.setDepartmentDescription("The computer engineering faculty members enjoy a close relationship with the applied mathematics and statistics, computer science, electrical engineering, and computational biology faculty members. Faculty members carry out joint research projects, supervise students, and teach courses outside their own departments. ");
+		
+		B5Professor schlag = new B5Professor();
+		schlag.setName("Martine");
+		schlag.setLastname("Schlag");
+		schlag.setRoom("Engineering 2, Room 219");
+		schlag.setOfficehour("Winter 16: W 12:30-1:30pm, F 11-12pm, Spring 16: to be determined");
+		
+		B5Professor obraczka = new B5Professor();
+		obraczka.setName("Katia");
+		obraczka.setLastname("Obraczka");
+		obraczka.setRoom("Engineering 2, Room 323");
+		obraczka.setOfficehour("Wednesdays 9-10:30am");
+		
+		department.addProfessor(schlag);
+		department.addProfessor(obraczka);
+		
+		System.out.println(String.format("Department name:\t\t%s", department.getName()));
+		System.out.println(String.format("Department description:\t%s", department.getDepartmentDescription()));
+		
+		System.out.println("------------------------");
+		
+		for(B5Professor professor : department.getProfessors()) {
+			System.out.println(String.format("Name:\t\t%s %s", professor.getName(), professor.getLastname()));
+			System.out.println(String.format("Room:\t\t%s", professor.getRoom()));
+			System.out.println(String.format("Office hour:\t%s", professor.getOfficehour()));
+		}
+		
 	}
 	
 	public static void testCase6() {
