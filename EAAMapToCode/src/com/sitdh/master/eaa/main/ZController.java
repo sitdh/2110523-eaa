@@ -52,6 +52,8 @@ public class ZController {
 			System.out.println(String.format("Name: %s", coffee.getName()));
 			System.out.println(String.format("Size: %s", coffee.getSize()));
 			System.out.println(String.format("Prise: $%f", coffee.getPrice()));
+			
+			System.out.println("------------------------");
 		}
 		
 	}
