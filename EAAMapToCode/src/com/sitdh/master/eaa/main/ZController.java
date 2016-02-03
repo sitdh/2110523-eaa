@@ -33,7 +33,27 @@ public class ZController {
 	}
 	
 	public static void testCase3() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		
+		B3Coffee espresso = new B3Coffee();
+		espresso.setName("Espresso");
+		espresso.setSize("Tall");
+		espresso.setPrice(3f);
+		
+		B3Coffee latte = new B3Coffee();
+		latte.setName("Latte");
+		latte.setSize("Grande");
+		latte.setPrice(5.5f);
+		
+		A3CoffeeMenu coffeeMenu = new A3CoffeeMenu();
+		coffeeMenu.addCoffee(espresso);
+		coffeeMenu.addCoffee(latte);
+		
+		for(B3Coffee coffee : coffeeMenu.getCoffeeList()) {
+			System.out.println(String.format("Name: %s", coffee.getName()));
+			System.out.println(String.format("Size: %s", coffee.getSize()));
+			System.out.println(String.format("Prise: $%f", coffee.getPrice()));
+		}
+		
 	}
 	
 	public static void testCase4() {
