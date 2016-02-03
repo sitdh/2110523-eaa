@@ -124,7 +124,7 @@ public class ZController {
 	}
 	
 	public static void testCase6() {
-		System.out.println("~~~~~~~~~~~~~~~~ Case 5 ~~~~~~~~~~~~~~~~");
+		System.out.println("~~~~~~~~~~~~~~~~ Case 6 ~~~~~~~~~~~~~~~~");
 		
 		B6CoordinatePoint focusA = new B6CoordinatePoint(3, 5);
 		B6CoordinatePoint focusB = new B6CoordinatePoint(20, 5);
