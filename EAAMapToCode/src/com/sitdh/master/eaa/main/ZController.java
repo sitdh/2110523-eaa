@@ -150,7 +150,13 @@ public class ZController {
 	}
 	
 	public static void testCase8() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		System.out.println("~~~~~~~~~~~~~~~~ Case 8 ~~~~~~~~~~~~~~~~");
+		
+		A8Driver taxiDriver = new A8Driver();
+		I8Car taxi = new B8TaxiCar();
+		
+		taxiDriver.getinTheCar(taxi);
+		taxiDriver.drive();
 	}
 	
 	public static void testCase9() {
