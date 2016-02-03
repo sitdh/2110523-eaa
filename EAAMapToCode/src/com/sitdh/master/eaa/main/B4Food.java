@@ -14,8 +14,6 @@ public class B4Food {
 		name = "Tuna salad sandwiches and Cole Slaw";
 		description = "Serve a scoop on top of a green salad, or between two pieces of bread with fresh lettuce. Sprinkle a little paprika on top to add a little flavor and color.";
 		price = 5f;
-		
-		placeInDish = new A4Dish();
 	}
 
 	public String getName() {

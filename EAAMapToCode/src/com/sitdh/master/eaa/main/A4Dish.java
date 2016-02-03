@@ -11,7 +11,6 @@ public class A4Dish {
 	public A4Dish() {
 		dishSize = "Large";
 		color = "White";
-		food = new B4Food();
 	}
 
 	public String getDishSize() {
