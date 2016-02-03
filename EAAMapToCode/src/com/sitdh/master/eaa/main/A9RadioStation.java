@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class A9RadioStation {
 
-	protected Vector<String> streamedSongs;
+	public Vector<String> streamedSongs;
 	
 	protected String streamedLocation;
 	
@@ -18,5 +18,9 @@ public class A9RadioStation {
 	
 	protected void changeStreamLocation(String streamLocation) {
 		this.streamedLocation = streamLocation;
+	}
+	
+	protected void rerouteStreamingServer() {
+		System.out.println("station> Rerouting stream server.");
 	}
 }
