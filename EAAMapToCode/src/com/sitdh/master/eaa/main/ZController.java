@@ -3,6 +3,18 @@ package com.sitdh.master.eaa.main;
 public class ZController {
 	
 	public static void testCase1() {
+		A1Motorbike a1 = new A1Motorbike();
+		B1Helicopter b1 = new B1Helicopter();
+		
+		System.out.println(String.format("Motorbike wheel size:\t%f", a1.getWheelSize()));
+		System.out.println(String.format("Motorbike length:\t%f", a1.getLength()));
+		System.out.println(String.format("Motorbike blueprint:\t%s", a1.getBlueprint()));
+		
+		System.out.println("------------------------");
+		
+		System.out.println(String.format("Helicopter length:\t%f", b1.getPaddleLength()));
+		System.out.println(String.format("Helicopter weight:\t%f", b1.getWeight()));
+		System.out.println(String.format("Helicopter blueprint:\t%s", b1.getBlueprint()));
 		
 	}
 	
@@ -48,6 +60,8 @@ public class ZController {
 		 */
 		ZController.testCase1();
 		
+		System.out.println("=============================");
+		
 		/**
 		 * #2
 		 * 
@@ -56,6 +70,8 @@ public class ZController {
 		 * [ A ] (1) -------> (1) [ B ]
 		 */
 		ZController.testCase2();
+
+		System.out.println("=============================");
 		
 		/**
 		 * #3
@@ -66,6 +82,8 @@ public class ZController {
 		 */
 		ZController.testCase3();
 		
+		System.out.println("=============================");
+		
 		/**
 		 * #4
 		 * 
@@ -74,6 +92,8 @@ public class ZController {
 		 * [ A ] (1) <-------> (1) [ B ]
 		 */
 		ZController.testCase4();
+
+		System.out.println("=============================");
 		
 		/**
 		 * #5
@@ -83,6 +103,8 @@ public class ZController {
 		 * [ A ] (1) <>------- (1) [ B ]
 		 */
 		ZController.testCase5();
+
+		System.out.println("=============================");
 		
 		/**
 		 * #6
@@ -92,6 +114,8 @@ public class ZController {
 		 * [ A ] (1) <>------- (1) [ B ]
 		 */
 		ZController.testCase6();
+
+		System.out.println("=============================");
 		
 		/**
 		 * #7
@@ -101,6 +125,8 @@ public class ZController {
 		 * [ A ] - - - - > [ B ] ------> [ C ]
 		 */
 		ZController.testCase7();
+
+		System.out.println("=============================");
 		
 		/**
 		 * #8
@@ -110,6 +136,8 @@ public class ZController {
 		 * [ A ] --------> [ I ] <+------- [ B ]
 		 */
 		ZController.testCase8();
+
+		System.out.println("=============================");
 		
 		/**
 		 * #9
