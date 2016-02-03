@@ -8,7 +8,7 @@ public class B4Food {
 	
 	public float price;
 	
-	protected A4Dish placeInDish;
+	public A4Dish placeInDish;
 	
 	public B4Food() {
 		name = "Tuna salad sandwiches and Cole Slaw";
