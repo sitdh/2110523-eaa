@@ -2,21 +2,23 @@ package com.sitdh.master.eaa.main;
 
 public class A1Motorbike {
 	
-	public int wheelSize;
+	public float wheelSize;
 	
 	private float length;
 	
 	protected String blueprint;
 	
 	public A1Motorbike() {
-		
+		wheelSize = 24.25f;
+		length = 341.33f;
+		blueprint = "Motorbike blueprint";
 	}
 
-	public int getWheelSize() {
+	public float getWheelSize() {
 		return wheelSize;
 	}
 
-	public void setWheelSize(int wheelSize) {
+	public void setWheelSize(float wheelSize) {
 		this.wheelSize = wheelSize;
 	}
 
