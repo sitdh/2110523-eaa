@@ -19,7 +19,17 @@ public class ZController {
 	}
 	
 	public static void testCase2() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		
+		A2PointOfSell pos = new A2PointOfSell();
+		
+		System.out.println(String.format("Cash available in machine: %f", pos.getCashDeposit()));
+		System.out.println(String.format("Number of sell transaction available: %d", pos.getTransaction().length));
+
+		System.out.println("------------------------");
+		
+		System.out.println(String.format("Staff name: %s", pos.getStaff().getName()));
+		System.out.println(String.format("Staff working hour: %s", pos.getStaff().getWorkingHour()));
+		System.out.println(String.format("Staff salary (bucks): %f", pos.getStaff().getSalary()));
 	}
 	
 	public static void testCase3() {
