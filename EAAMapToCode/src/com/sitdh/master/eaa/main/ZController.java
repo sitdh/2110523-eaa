@@ -6,14 +6,14 @@ public class ZController {
 		A1Motorbike a1 = new A1Motorbike();
 		B1Helicopter b1 = new B1Helicopter();
 		
-		System.out.println(String.format("Motorbike wheel size:\t%f", a1.getWheelSize()));
-		System.out.println(String.format("Motorbike length:\t%f", a1.getLength()));
+		System.out.println(String.format("Motorbike wheel size:\t%,.2f", a1.getWheelSize()));
+		System.out.println(String.format("Motorbike length:\t%,.2f", a1.getLength()));
 		System.out.println(String.format("Motorbike blueprint:\t%s", a1.getBlueprint()));
 		
 		System.out.println("------------------------");
 		
-		System.out.println(String.format("Helicopter length:\t%f", b1.getPaddleLength()));
-		System.out.println(String.format("Helicopter weight:\t%f", b1.getWeight()));
+		System.out.println(String.format("Helicopter length:\t%,.2f", b1.getPaddleLength()));
+		System.out.println(String.format("Helicopter weight:\t%,.2f", b1.getWeight()));
 		System.out.println(String.format("Helicopter blueprint:\t%s", b1.getBlueprint()));
 		
 	}
@@ -22,14 +22,14 @@ public class ZController {
 		
 		A2PointOfSell pos = new A2PointOfSell();
 		
-		System.out.println(String.format("Cash available in machine: %f", pos.getCashDeposit()));
+		System.out.println(String.format("Cash available in machine: $%,.2f", pos.getCashDeposit()));
 		System.out.println(String.format("Number of sell transaction available: %d", pos.getTransaction().length));
 
 		System.out.println("------------------------");
 		
 		System.out.println(String.format("Staff name: %s", pos.getStaff().getName()));
 		System.out.println(String.format("Staff working hour: %s", pos.getStaff().getWorkingHour()));
-		System.out.println(String.format("Staff salary (bucks): %f", pos.getStaff().getSalary()));
+		System.out.println(String.format("Staff salary (bucks): $%,.2f", pos.getStaff().getSalary()));
 	}
 	
 	public static void testCase3() {
@@ -51,7 +51,7 @@ public class ZController {
 		for(B3Coffee coffee : coffeeMenu.getCoffeeList()) {
 			System.out.println(String.format("Name: %s", coffee.getName()));
 			System.out.println(String.format("Size: %s", coffee.getSize()));
-			System.out.println(String.format("Prise: $%f", coffee.getPrice()));
+			System.out.println(String.format("Price: $%,.2f", coffee.getPrice()));
 			
 			System.out.println("------------------------");
 		}
@@ -59,7 +59,22 @@ public class ZController {
 	}
 	
 	public static void testCase4() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		A4Dish largeDish = new A4Dish();
+		B4Food salad = new B4Food();
+		
+		largeDish.setFood(salad);
+		salad.setPlaceInDish(largeDish);
+		
+		System.out.println(String.format("Dish size:\t%s", largeDish.getDishSize()));
+		System.out.println(String.format("Color:\t\t%s", largeDish.getColor()));
+		System.out.println(String.format("Food in dish:\t%s", largeDish.getFood().getName()));
+		
+		System.out.println("------------------------");
+		
+		System.out.println(String.format("Food name:\t%s", salad.getName()));
+		System.out.println(String.format("Food price:\t$%,.2f", salad.getPrice()));
+		System.out.println(String.format("Food description:%s", salad.getDescription()));
+		System.out.println(String.format("Place in dish:\t%s", salad.getPlaceInDish().getDishSize()));
 	}
 	
 	public static void testCase5() {
