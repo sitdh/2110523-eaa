@@ -10,6 +10,10 @@ public class A5Department {
 	
 	public Vector<B5Professor> professors;
 	
+	public A5Department() {
+		professors = new Vector<B5Professor>();
+	}
+	
 	public void addProfessor(B5Professor professor) {
 		professors.addElement(professor);
 	}
