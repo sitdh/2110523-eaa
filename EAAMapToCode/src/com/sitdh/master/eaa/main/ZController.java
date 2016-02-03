@@ -124,7 +124,19 @@ public class ZController {
 	}
 	
 	public static void testCase6() {
-		throw new UnsupportedOperationException("Not implemented yet");
+		System.out.println("~~~~~~~~~~~~~~~~ Case 5 ~~~~~~~~~~~~~~~~");
+		
+		B6CoordinatePoint focusA = new B6CoordinatePoint(3, 5);
+		B6CoordinatePoint focusB = new B6CoordinatePoint(20, 5);
+		
+		A6Ellipse ellipse = new A6Ellipse(16, focusA, focusB);
+		System.out.println(String.format("Focus A: (%d, %d)", ellipse.getFocusPointA().getX(), ellipse.getFocusPointA().getY()));
+		System.out.println(String.format("Focus B: (%d, %d)", ellipse.getFocusPointB().getX(), ellipse.getFocusPointB().getY()));
+		System.out.println(String.format("Major axis lenth: %,.2f", ellipse.getMajorAxis()));
+		System.out.println(String.format("Minor axis lenth: %,.2f", ellipse.getMinorAxis()));
+		
+		System.out.println("Draw: " + ellipse.rendorEllipse());
+		
 	}
 	
 	public static void testCase7() {
