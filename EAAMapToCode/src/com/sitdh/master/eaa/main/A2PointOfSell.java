@@ -11,6 +11,7 @@ public class A2PointOfSell {
 	public A2PointOfSell() {
 		// TODO: Add constructor
 		staff = new B2StaffProfile();
+		cashDeposit = 40000.0f;
 	}
 	
 	public void addTransaction() {
@@ -27,10 +28,6 @@ public class A2PointOfSell {
 
 	public B2StaffProfile getStaff() {
 		return staff;
-	}
-
-	public void setStaff(B2StaffProfile staff) {
-		this.staff = staff;
 	}
 
 	public String[] getTransaction() {

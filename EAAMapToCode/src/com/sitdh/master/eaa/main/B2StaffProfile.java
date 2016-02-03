@@ -7,6 +7,12 @@ public class B2StaffProfile {
 	public String workingHour;
 	
 	protected float salary;
+	
+	public B2StaffProfile() {
+		name = "Thomas J.M. Potter";
+		workingHour = "10:00 - 19:00";
+		salary = 19500.0f;
+	}
 
 	public String getName() {
 		return name;
