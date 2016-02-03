@@ -12,6 +12,7 @@ public class A2PointOfSell {
 		// TODO: Add constructor
 		staff = new B2StaffProfile();
 		cashDeposit = 40000.0f;
+		transaction = new String[]{"Celery 50g $1", "Carrot 500g $3"};
 	}
 	
 	public void addTransaction() {
