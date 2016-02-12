@@ -1,5 +1,7 @@
 package com.sitdh.master.eaa.main;
 
+import java.util.ArrayList;
+
 import com.sitdh.master.eaa.subsystem.Y9NewYorkRadioStation;
 
 public class ZController {
@@ -42,12 +44,18 @@ public class ZController {
 		
 		A3CoffeeMenu coffeeMenu = new A3CoffeeMenu();
 		
-		for(String coffee : coffeeMenu.getCoffeeList()) {
-			System.out.println(coffee);
-		}
+		B3CoffeeDetail espressoSmall = new B3CoffeeDetail("Espresso", "Small", 2.4f);
+		B3CoffeeDetail espressoTall = new B3CoffeeDetail("Espresso", "Tall", 3f);
+		B3CoffeeDetail latteSmall = new B3CoffeeDetail("Hot Latte", "Small", 3f);
+		B3CoffeeDetail latteTall = new B3CoffeeDetail("Hot Latte", "Tall", 3.5f);
 		
-		System.out.println("------------------------");
+		ArrayList<B3CoffeeDetail> coffee = new ArrayList<B3CoffeeDetail>();
+		coffee.add(espressoTall);
+		coffee.add(espressoSmall);
+		coffee.add(latteTall);
+		coffee.add(latteSmall);
 		
+		coffeeMenu.setCoffeeList(coffee);
 		coffeeMenu.displayMenu();
 		
 	}
