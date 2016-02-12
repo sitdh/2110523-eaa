@@ -5,7 +5,7 @@ public class A6Car {
 	private B6CarEngine engine;
 	
 	public A6Car(B6CarEngine engine) {
-		
+		this.engine = engine;
 	}
 	
 	public void startCar() {
@@ -18,5 +18,6 @@ public class A6Car {
 						)
 				);
 		engine.startEngine();
+		System.out.println("car> Ready");
 	}
 }
