@@ -140,8 +140,8 @@ public class ZController {
 	public static void testCase9() {
 		System.out.println("~~~~~~~~~~~~~~~~ Case 9 ~~~~~~~~~~~~~~~~");
 		
-		X9BangkokRadioStation bkkRadioStation = new X9BangkokRadioStation();
 		Y9NewYorkRadioStation nyRadioStation = new Y9NewYorkRadioStation();
+		X9BangkokRadioStation bkkRadioStation = new X9BangkokRadioStation();
 		
 		nyRadioStation.startLiveStreamingFromAnoterStation(bkkRadioStation);
 		
