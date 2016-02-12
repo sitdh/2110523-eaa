@@ -120,11 +120,11 @@ public class ZController {
 	public static void testCase7() {
 		System.out.println("~~~~~~~~~~~~~~~~ Case 7 ~~~~~~~~~~~~~~~~");
 		
-		A7Customer customer = new A7Customer();
-		B7Waiter waiter = new B7Waiter();
+		A7Connection connection = new A7Connection("foo", "bar", "localhost");
+		connection.connect();
 		
-		customer.callForWaiter(waiter);
-		customer.makeAnOrder("Coconut Milk Soup with Chicken");
+		String queryResult = connection.query("Lorem ipsum");
+		System.out.println(String.format("main> %s", queryResult));
 	}
 	
 	public static void testCase8() {
