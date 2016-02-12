@@ -8,7 +8,7 @@ public class B5Professor {
 	
 	public String room;
 	
-	public String officehour;
+	public String officeHour;
 
 	public String getName() {
 		return name;
@@ -34,12 +34,12 @@ public class B5Professor {
 		this.room = room;
 	}
 
-	public String getOfficehour() {
-		return officehour;
+	public String getOfficeHour() {
+		return officeHour;
 	}
 
-	public void setOfficehour(String officehour) {
-		this.officehour = officehour;
+	public void setOfficeHour(String officeHour) {
+		this.officeHour = officeHour;
 	}
 
 }
