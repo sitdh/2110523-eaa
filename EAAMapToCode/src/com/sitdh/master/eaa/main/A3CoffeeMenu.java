@@ -13,11 +13,15 @@ public class A3CoffeeMenu {
 	}
 	
 	public void displayMenu() {
-		B3CoffeeDetail coffeeDetail = new B3CoffeeDetail();
+		B3CoffeeDetail espressoSmall = new B3CoffeeDetail("Espresso", "Small", 2.4f);
+		B3CoffeeDetail espressoTall = new B3CoffeeDetail("Espresso", "Tall", 3f);
+		B3CoffeeDetail latteSmall = new B3CoffeeDetail("Hot Latte", "Small", 3f);
+		B3CoffeeDetail latteTall = new B3CoffeeDetail("Hot Latte", "Tall", 3.5f);
 		
-		for(String coffee : this.coffeeList) {
-			coffeeDetail.printMenu(coffee);
-		}
+		espressoSmall.print();
+		espressoTall.print();
+		latteSmall.print();
+		latteTall.print();
 	}
 
 }
