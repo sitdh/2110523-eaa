@@ -1,21 +1,23 @@
 package com.sitdh.master.eaa.main;
 
-import java.util.Vector;
-
 public class A3CoffeeMenu {
 	
-	private Vector<B3Coffee> coffeeList;
+	private String[] coffeeList;
 	
 	public A3CoffeeMenu() {
-		coffeeList = new Vector<B3Coffee>();
+		coffeeList = new String[]{"Espresso,Small,2.40", "Espresso,Tall,3.00", "Hot Latte,Small,3.00", "Hot Latte,Tall, 3.50"};
 	}
 	
-	public void addCoffee(B3Coffee coffee) {
-		coffeeList.addElement(coffee);
-	}
-	
-	public Vector<B3Coffee> getCoffeeList() {
+	public String[] getCoffeeList() {
 		return coffeeList;
+	}
+	
+	public void displayMenu() {
+		B3CoffeeDetail coffeeDetail = new B3CoffeeDetail();
+		
+		for(String coffee : this.coffeeList) {
+			coffeeDetail.printMenu(coffee);
+		}
 	}
 
 }
