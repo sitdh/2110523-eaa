@@ -40,32 +40,15 @@ public class ZController {
 	public static void testCase3() {
 		System.out.println("~~~~~~~~~~~~~~~~ Case 3 ~~~~~~~~~~~~~~~~");
 		
-		B3Coffee espresso = new B3Coffee();
-		espresso.setName("Espresso");
-		espresso.setSize("Tall");
-		espresso.setPrice(3f);
-		
-		B3Coffee latte = new B3Coffee();
-		latte.setName("Latte");
-		latte.setSize("Grande");
-		latte.setPrice(5.5f);
-		
 		A3CoffeeMenu coffeeMenu = new A3CoffeeMenu();
-		coffeeMenu.addCoffee(espresso);
-		coffeeMenu.addCoffee(latte);
 		
-		B3Coffee coffee = null;
-		while(!coffeeMenu.getCoffeeList().isEmpty()) {
-			coffee = coffeeMenu.getCoffeeList().firstElement();
-			
-			System.out.println(String.format("Name: %s", coffee.getName()));
-			System.out.println(String.format("Size: %s", coffee.getSize()));
-			System.out.println(String.format("Price: $%,.2f", coffee.getPrice()));
-			
-			coffeeMenu.getCoffeeList().remove(coffee);
-			
-			System.out.println("------------------------");
+		for(String coffee : coffeeMenu.getCoffeeList()) {
+			System.out.println(coffee);
 		}
+		
+		System.out.println("------------------------");
+		
+		coffeeMenu.displayMenu();
 		
 	}
 	
