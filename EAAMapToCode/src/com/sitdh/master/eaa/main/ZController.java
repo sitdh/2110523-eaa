@@ -84,27 +84,16 @@ public class ZController {
 		schlag.setName("Martine");
 		schlag.setLastname("Schlag");
 		schlag.setRoom("Engineering 2, Room 219");
-		schlag.setOfficehour("Winter 16: W 12:30-1:30pm, F 11-12pm, Spring 16: to be determined");
+		schlag.setOfficeHour("Winter 16: W 12:30-1:30pm, F 11-12pm, Spring 16: to be determined");
 		
-		B5Professor obraczka = new B5Professor();
-		obraczka.setName("Katia");
-		obraczka.setLastname("Obraczka");
-		obraczka.setRoom("Engineering 2, Room 323");
-		obraczka.setOfficehour("Wednesdays 9-10:30am");
-		
-		department.addProfessor(schlag);
-		department.addProfessor(obraczka);
+		department.setHeadOfDepartment(schlag);
 		
 		System.out.println(String.format("Department name:\t\t%s", department.getName()));
 		System.out.println(String.format("Department description:\t%s", department.getDepartmentDescription()));
 		
 		System.out.println("------------------------");
 		
-		for(B5Professor professor : department.getProfessors()) {
-			System.out.println(String.format("Name:\t\t%s %s", professor.getName(), professor.getLastname()));
-			System.out.println(String.format("Room:\t\t%s", professor.getRoom()));
-			System.out.println(String.format("Office hour:\t%s", professor.getOfficehour()));
-		}
+		department.displayDepartmentInformation();
 		
 	}
 	
