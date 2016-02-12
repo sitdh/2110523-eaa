@@ -1,21 +1,15 @@
 package com.sitdh.master.eaa.main;
 
-import java.util.Vector;
-
 public class A5Department {
 	
 	public String name;
 	
 	public String departmentDescription;
 	
-	public Vector<B5Professor> professors;
+	public B5Professor headOfDepartment;
 	
 	public A5Department() {
-		professors = new Vector<B5Professor>();
-	}
-	
-	public void addProfessor(B5Professor professor) {
-		professors.addElement(professor);
+		headOfDepartment = new B5Professor();
 	}
 
 	public String getName() {
@@ -34,12 +28,16 @@ public class A5Department {
 		this.departmentDescription = departmentDescription;
 	}
 
-	public Vector<B5Professor> getProfessors() {
-		return professors;
+	public B5Professor getHeadOfDepartment() {
+		return headOfDepartment;
 	}
 
-	public void setProfessors(Vector<B5Professor> professors) {
-		this.professors = professors;
+	public void setHeadOfDepartment(B5Professor headOfDepartment) {
+		this.headOfDepartment = headOfDepartment;
 	}
-
+	
+	public void displayDepartmentInformation() {
+		
+	}
+	
 }
