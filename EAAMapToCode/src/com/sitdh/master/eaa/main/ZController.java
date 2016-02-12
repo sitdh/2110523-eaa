@@ -71,14 +71,14 @@ public class ZController {
 		
 		System.out.println(String.format("Dish size:\t%s", largeDish.getDishSize()));
 		System.out.println(String.format("Color:\t\t%s", largeDish.getColor()));
-		System.out.println(String.format("Food in dish:\t%s", largeDish.food.getName()));
+		System.out.println(String.format("Food in dish:\t%s", largeDish.getFood().getName()));
 		
 		System.out.println("------------------------");
 		
 		System.out.println(String.format("Food name:\t%s", salad.getName()));
 		System.out.println(String.format("Food price:\t$%,.2f", salad.getPrice()));
 		System.out.println(String.format("Food description:%s", salad.getDescription()));
-		System.out.println(String.format("Place in dish:\t%s", salad.placeInDish.getDishSize()));
+		System.out.println(String.format("Place in dish:\t%s", salad.getPlaceInDish().getDishSize()));
 	}
 	
 	public static void testCase5() {
