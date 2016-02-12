@@ -8,7 +8,7 @@ public class A3CoffeeMenu {
 	private List<B3CoffeeDetail> coffeeList;
 	
 	public A3CoffeeMenu() {
-		coffeeList = new ArrayList<B3CoffeeDetail>(); // {"Espresso,Small,2.40", "Espresso,Tall,3.00", "Hot Latte,Small,3.00", "Hot Latte,Tall, 3.50"};
+		coffeeList = new ArrayList<B3CoffeeDetail>();
 	}
 	
 	public void setCoffeeList(List<B3CoffeeDetail> coffeeList) {
