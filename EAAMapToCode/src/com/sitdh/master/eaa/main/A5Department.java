@@ -37,7 +37,18 @@ public class A5Department {
 	}
 	
 	public void displayDepartmentInformation() {
-		
+		System.out.println(String.format("Department name: %s", this.getName()));
+		System.out.println(String.format("Department descriptoin: %s", this.getDepartmentDescription()));
+		System.out.println("-----------------------------------------");
+		System.out.println(
+				String.format(
+						"Head of Department's name: %s %s", 
+						this.getHeadOfDepartment().getName(), 
+						this.getHeadOfDepartment().getLastname()
+						)
+				);
+		System.out.println(String.format("Room number: %s", this.getHeadOfDepartment().getRoom()));
+		System.out.println(String.format("Office hour: %s", this.getHeadOfDepartment().getOfficeHour()));
 	}
 	
 }
